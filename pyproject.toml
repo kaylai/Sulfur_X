@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Sulfur_X"
+version = "1.2.1"
+readme = "README.md"
+authors = [{name = "Shuo Ding"}]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy.optimize",
+    "scipy.stats",
+    "tqdm",
+]
