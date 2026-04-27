@@ -1,2 +1,5 @@
-from importlib import metadata
-__version__ = metadata.version("Sulfur_X")
+from importlib.metadata import version, PackageNotFoundError
+try:
+    __version__ = version("Sulfur_X")
+except PackageNotFoundError:
+    __version__ = "unknown"
